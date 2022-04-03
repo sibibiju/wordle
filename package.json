@@ -5,13 +5,15 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha -r ts-node/register ./lib/spec/*.spec.ts",
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development",
+    "build": "webpack serve --mode production",
+    "deploy": "gh-pages -d ./"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sibibiju/wordle.git"
   },
-  "author": "",
+  "author": "Sibi Kandathil",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sibibiju/wordle/issues"
@@ -21,6 +23,7 @@
     "@types/chai": "^4.3.0",
     "@types/mocha": "^9.1.0",
     "chai": "^4.3.6",
+    "gh-pages": "^3.2.3",
     "mocha": "^9.2.2",
     "ts-loader": "^9.2.8",
     "ts-node": "^10.7.0",
