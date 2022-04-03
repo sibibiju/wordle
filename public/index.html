@@ -1,0 +1,50 @@
+<html>
+  <style>
+    .button {
+      background-color: blue;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    #user-input {
+      border: 0;
+      border-bottom: 2px solid #1976d2;
+      width: 80%;
+      font-size: 30px;
+      line-height: 35px;
+      height: 70px;
+      text-align: center;
+      padding: 10px;
+      background: transparent;
+      color: #bbdefb;
+    }
+
+    body,
+    #output {
+      background-color: black;
+      font-size: large;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: gray;
+      text-align: center;
+      width: auto;
+      margin: 0 auto;
+    }
+  </style>
+  <body>
+    <div>
+      <h1>Wordle Unlimited</h1>
+      <button id="reset" class="button">Reset</button>
+      <h1 id="game-over" style="visibility: hidden">Guessed it!</h1>
+      <input id="user-input" type="text" />
+      <div id="output"></div>
+    </div>
+  </body>
+  <script src="index.js" type="text/javascript"></script>
+</html>
